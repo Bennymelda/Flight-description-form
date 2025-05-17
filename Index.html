@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flight Booking Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Flight Booking Form</h2>
+  <form action="#" method="post">
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" class="fullname" name="fullname" required />
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="" disabled selected>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+      <option value="prefer_not_to_say">Prefer not to say</option>
+    </select>
+
+    <label for="passport">Passport/ID Number:</label>
+    <input type="text" id="passport" name="passport" />
+
+    <label for="contact">Contact Email or Phone:</label>
+    <input type="text" id="contact" name="contact" required />
+
+    <label for="departure-city">Departure City/Airport:</label>
+    <input type="text" id="departure-city" name="departure_city" required />
+
+    <label for="arrival-city">Arrival City/Airport:</label>
+    <input type="text" id="arrival-city" name="arrival_city" required />
+
+    <label for="departure-date">Departure Date:</label>
+    <input type="date" id="departure-date" name="departure_date" required />
+
+    <label for="return-date">Return Date (optional):</label>
+    <input type="date" id="return-date" name="return_date" />
+
+    <label for="flight-class">Flight Class:</label>
+    <select id="flight-class" name="flight_class" required>
+      <option value="" disabled selected>Select Class</option>
+      <option value="economy">Economy</option>
+      <option value="business">Business</option>
+      <option value="first">First Class</option>
+    </select>
+
+    <label for="adults">Number of Adults:</label>
+    <input type="number" id="adults" name="adults"  required />
+
+    <label for="children">Number of Children:</label>
+    <input type="number" id="children" name="children"  />
+
+    <label for="infants">Number of Infants:</label>
+    <input type="number" id="infants" name="infants"  />
+    
+     <div>
+    <button type="submit">Submit Booking
+        <a href="Home.html"></a>
+    </button>
+
+    
+    </div>
+  </form>
+<script src="script.js"></script>
+</body>
+</html>
+
+
