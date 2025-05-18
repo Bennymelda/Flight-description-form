@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+ reservation
+    </title>
+          <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="mole" style="background-image:none; box-shadow:none; margin-top:0px">
+  
+ <div class="hu">
+ <div class="man">
+      <p class="home">Thank you for filling this form. Your reservation has  been made.</p>
+    </div>
+    </div>
+    
+    
+
+<script>
+  let name = localStorage.getItem('name');
+  if (name) {
+    document.querySelector('.home').textContent = `Thank you ${name} for filling this form, your reservation has been made.`;
+  }
+</script>
+  </body>
+</html>
+  
